@@ -1,6 +1,7 @@
 const router = require('express').Router()
 module.exports = router
 
+router.use('/recipes', require('./recipes'))
 router.get('/hello', async (req, res, next) => {
   console.log('this is a good thing')
 })
